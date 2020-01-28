@@ -1,0 +1,31 @@
+Searching 8561 files for "ItSolutionStuff.com"
+
+/home/artem/backup/blog/resources/views/products/index.blade.php:
+    5          <div class="col-lg-12 margin-tb">
+    6              <div class="pull-left">
+    7:                 <h2>Laravel 6 CRUD Example from scratch</h2>
+    8              </div>
+    9              <div class="pull-right">
+
+/home/artem/backup/blog/resources/views/products/layout.blade.php:
+    2  <html>
+    3  <head>
+    4:     <title>Laravel 6 CRUD Application</title>
+    5      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
+    6  </head>
+
+/home/artem/backup/blog/storage/framework/views/3e5f47f8bd8f9f5460b473ddc2a8d0e82634ff0f.php:
+    2  <html>
+    3  <head>
+    4:     <title>Laravel 6 CRUD Application</title>
+    5      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
+    6  </head>
+
+/home/artem/backup/blog/storage/framework/views/94c36b4289cfd4963b04e5594f3400b46f1cac31.php:
+    4          <div class="col-lg-12 margin-tb">
+    5              <div class="pull-left">
+    6:                 <h2>Laravel 6 CRUD Example from scratch</h2>
+    7              </div>
+    8              <div class="pull-right">
+
+4 matches across 4 files

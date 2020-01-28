@@ -12,7 +12,9 @@ class Task extends Model
      *
      *@var array
      */
-    protected $fillable = ['name'];
+     protected $fillable = [
+        'name', 'detail'
+    ];
 
     /**
      * Получить пользователя - владельца данной задачи
@@ -24,8 +26,8 @@ class Task extends Model
 }
 
 
-$user = App\User::find(1);
+$user = User::find(1);
 
-foreach ($user->tasks as $task) {
+/*foreach ($user->tasks as $task) {
 	echo $task->name;
-}
+}*/
