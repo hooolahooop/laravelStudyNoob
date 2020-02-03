@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Support\Facades\Hash;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 class AuthController extends Controller
 {
@@ -22,6 +23,17 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
+    public function login(Request $request)
+    {
+        $credentials = $request->only(['email', 'password']);
+
+        if (!$token = JWTAuth::attempt($credentials)) {
+            return 'Invalid login details';
+        }
+
+        return $token;
+    }
+    /* то что было изначально
     public function login()
     {
         $credentials = request(['email', 'password']);
@@ -32,7 +44,7 @@ class AuthController extends Controller
 
         return $this->respondWithToken($token);
     }
-
+    */
     /**
      * User registration
      */
@@ -98,4 +110,10 @@ class AuthController extends Controller
             'expires_in' => auth()->factory()->getTTL() * 60
         ]);
     }
+
+    public function __construct() 
+    {
+        $this->middleware('auth.role:admin');
+    }
 }
+

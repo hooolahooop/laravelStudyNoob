@@ -23,6 +23,16 @@ class Task extends Model
     {
     	return $this->belongsTo(User::class);
     }
+
+    /**
+     * @var string
+     */
+    protected $table = 'tasks';
+
+    /**
+     * @var array
+     */
+    protected $guarded = [];
 }
 
 

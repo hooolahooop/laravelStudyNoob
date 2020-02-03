@@ -5391,8 +5391,8 @@
     },
     {
         "name": "tymon/jwt-auth",
-        "version": "1.0.0-rc.5.1",
-        "version_normalized": "1.0.0.0-RC5.1",
+        "version": "dev-develop",
+        "version_normalized": "dev-develop",
         "source": {
             "type": "git",
             "url": "https://github.com/tymondesigns/jwt-auth.git",
@@ -5438,7 +5438,7 @@
                 ]
             }
         },
-        "installation-source": "dist",
+        "installation-source": "source",
         "autoload": {
             "psr-4": {
                 "Tymon\\JWTAuth\\": "src/"
