@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="http://127.0.0.1:8000/tasks">CRUD Tasks</a>
+                    <!--<a href="http://127.0.0.1:8000/tasks">CRUD Tasks</a>-->
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
