@@ -29,6 +29,7 @@ Route::group(['middleware' => 'auth.jwt'], function () {
     Route::put('tasks/{id}', 'TaskController@update');
     Route::delete('tasks/{id}', 'TaskController@destroy');
 });
+
 /*
 Route::group([
 	'prefix' => 'auth'
