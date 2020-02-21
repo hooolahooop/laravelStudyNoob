@@ -14,8 +14,8 @@ class ComposerStaticInit752d509cde3acffa9a5abb42d2b79586
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
-        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
@@ -29,6 +29,7 @@ class ComposerStaticInit752d509cde3acffa9a5abb42d2b79586
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'b6ec61354e97f32c0ae683041c78392a' => __DIR__ . '/..' . '/scrivo/highlight.php/HighlightUtilities/functions.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
+        '4e485acc51d49a0961b20d11afe2fdc9' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -132,6 +133,7 @@ class ComposerStaticInit752d509cde3acffa9a5abb42d2b79586
         ),
         'F' => 
         array (
+            'Fomvasss\\Dadata\\' => 16,
             'Fideloper\\Proxy\\' => 16,
             'Faker\\' => 6,
             'Facade\\Ignition\\' => 16,
@@ -388,6 +390,10 @@ class ComposerStaticInit752d509cde3acffa9a5abb42d2b79586
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+        'Fomvasss\\Dadata\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src',
         ),
         'Fideloper\\Proxy\\' => 
         array (
@@ -1262,6 +1268,22 @@ class ComposerStaticInit752d509cde3acffa9a5abb42d2b79586
         'Faker\\ValidGenerator' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/ValidGenerator.php',
         'Fideloper\\Proxy\\TrustProxies' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustProxies.php',
         'Fideloper\\Proxy\\TrustedProxyServiceProvider' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustedProxyServiceProvider.php',
+        'Fomvasss\\Dadata\\ClientClean' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/ClientClean.php',
+        'Fomvasss\\Dadata\\ClientSuggest' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/ClientSuggest.php',
+        'Fomvasss\\Dadata\\DadataServiceProvider' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/DadataServiceProvider.php',
+        'Fomvasss\\Dadata\\Facades\\DadataClean' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/Facades/DadataClean.php',
+        'Fomvasss\\Dadata\\Facades\\DadataSuggest' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/Facades/DadataSuggest.php',
+        'Fomvasss\\Dadata\\Response\\AbstractResponse' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/Response/AbstractResponse.php',
+        'Fomvasss\\Dadata\\Response\\Address' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/Response/Address.php',
+        'Fomvasss\\Dadata\\Response\\Cdek' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/Response/Cdek.php',
+        'Fomvasss\\Dadata\\Response\\Date' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/Response/Date.php',
+        'Fomvasss\\Dadata\\Response\\Email' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/Response/Email.php',
+        'Fomvasss\\Dadata\\Response\\Name' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/Response/Name.php',
+        'Fomvasss\\Dadata\\Response\\Passport' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/Response/Passport.php',
+        'Fomvasss\\Dadata\\Response\\Phone' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/Response/Phone.php',
+        'Fomvasss\\Dadata\\Response\\StatisticServices' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/Response/StatisticServices.php',
+        'Fomvasss\\Dadata\\Response\\Statistics' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/Response/Statistics.php',
+        'Fomvasss\\Dadata\\Response\\Vehicle' => __DIR__ . '/..' . '/fomvasss/laravel-dadata/src/Response/Vehicle.php',
         'GuzzleHttp\\Client' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Client.php',
         'GuzzleHttp\\ClientInterface' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/ClientInterface.php',
         'GuzzleHttp\\Cookie\\CookieJar' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Cookie/CookieJar.php',

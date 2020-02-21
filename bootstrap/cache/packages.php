@@ -17,6 +17,18 @@
       0 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     ),
   ),
+  'fomvasss/laravel-dadata' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Fomvasss\\Dadata\\DadataServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'DadataSuggest' => 'Fomvasss\\Dadata\\Facades\\DadataSuggest',
+      'DadataClean' => 'Fomvasss\\Dadata\\Facades\\DadataClean',
+    ),
+  ),
   'laravel/tinker' => 
   array (
     'providers' => 
