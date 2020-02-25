@@ -19,13 +19,18 @@ Auth::routes(/*['verify' => true]*/);
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
+Route::get('home', function () {
+    return view('home');
+});
+
 Route::resource('tasks', 'TaskController');
 
+Route::get('/calculate', 'CalculateController@index')->name('calculate')->middleware('auth');
 
 Route::get('calculate', function () {
     return view('calculate');
 });
 
-Route::get('calculated', function () {
+/*Route::get('calculated', function () {
     return view('calculated');
 });

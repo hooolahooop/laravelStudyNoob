@@ -77,9 +77,17 @@
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+                float: left;
+                margin-top: 55px;
             }
 
             .m-b-md {
+                position: relative;
+                margin-bottom: 30px;
+                right: 3%;
+            }
+
+            .m-b-md2 {
                 margin-bottom: 30px;
             }
 
@@ -123,6 +131,9 @@
         </style>
 </head>
 <body>
+    <div class="links">
+    	<a href="/">Назад</a>
+    </div>
 	<div class="content">
         <div class="mini_title m-b-md">
             Расчет стоимости жилья
@@ -132,7 +143,7 @@
         </div>-->
         <form method="GET" action="<?= $_SERVER['REQUEST_URI'];?>">
 	        <fieldset>
-	        	<legend class="micro_title m-b-md"><b>Для расчета введите данные:</b></legend>
+	        	<legend class="micro_title m-b-md2"><b>Для расчета введите данные:</b></legend>
 	        	<div class="main">
 		        	<div class="field">
 			        	<label for="adr" class="input_text">Адрес: </label>
@@ -158,6 +169,11 @@
 
 
 	        <?php
+
+	        	use Illuminate\Support\Facades\Auth;
+
+
+
 	        	class CBRAgent
 	        	{
 	        		protected $list = array();
@@ -213,7 +229,12 @@
 		        	$cost = $_GET['price'] ?? '';
 
 		        	$a = (int)$square * (int)$cost / $usd_curs;
-		        	echo round($a, 2)." $";
+		        	echo round($a, 2);
+		        ?>
+		        <?php
+		        	if (! Auth::check()) {
+		        		return view('welcome');
+		        	}
 		        ?>
 	    	</div>
 	    </form>
