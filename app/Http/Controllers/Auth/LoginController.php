@@ -20,21 +20,15 @@ class LoginController extends Controller
     */
 
     use AuthenticatesUsers {
-        logout as oldLogout;
+        //
     }
-    
-    public function logout(Request $request)
-    {
-        $this->oldLogout($request);
-        return redirect('/');
-    }    
 
     /**
      * The path to the 'home' route for your application.
      *
      * @var string
      */
-    //public const HOME = '/calculate';
+    //public const HOME = '/home';
 
     /**
      * Where to redirect users after login.

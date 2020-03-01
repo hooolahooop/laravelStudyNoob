@@ -17,8 +17,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('login', 'ApiController@login');
-Route::post('register', 'ApiController@register');
+//Route::post('login', 'ApiController@login');
+//Route::post('register', 'ApiController@register');
 
 Route::group(['middleware' => 'auth.jwt'], function () {
     Route::get('logout', 'ApiController@logout');
@@ -30,6 +30,20 @@ Route::group(['middleware' => 'auth.jwt'], function () {
     Route::delete('tasks/{id}', 'TaskController@destroy');
 });
 
+
+
+Route::post('register', 'AuthController@register');
+Route::post('login', 'AuthController@login');
+Route::post('logout', 'AuthController@logout');
+Route::get('logout', 'AuthController@logout');
+/*Route::group(['middleware' => 'auth.jwt'], function () {
+    Route::get('calculate', 'CalculateController@index');
+    Route::get('calculate/{id}', 'CalculateController@show');
+    //Route::post('calculate', 'CalculateController@store');
+    Route::put('calculate/{id}', 'CalculateController@update');
+    Route::delete('calculate/{id}', 'CalculateController@destroy');
+});
+*/
 /*
 Route::group([
 	'prefix' => 'auth'

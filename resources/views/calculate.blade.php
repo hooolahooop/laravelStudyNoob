@@ -147,7 +147,21 @@
 	        	<div class="main">
 		        	<div class="field">
 			        	<label for="adr" class="input_text">Адрес: </label>
-			        	<input type="text" id="adr" name="adr" required placeholder="ул.Ленина, д. 1, кв. 1" autofocus="on">
+			        	<input id="address" name="address" type="text" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@20.1.1/dist/css/suggestions.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@20.1.1/dist/js/jquery.suggestions.min.js"></script>
+
+<script>
+    $("#address").suggestions({
+        token: "a40338c85e3de65741d26a038f8d3a824513fd97",
+        type: "ADDRESS",
+        /* Вызывается, когда пользователь выбирает одну из подсказок */
+        onSelect: function(suggestion) {
+            console.log(suggestion);
+        }
+    });
+</script>
 			        </div>
 
 			        <div class="field">	
@@ -229,7 +243,7 @@
 		        	$cost = $_GET['price'] ?? '';
 
 		        	$a = (int)$square * (int)$cost / $usd_curs;
-		        	echo round($a, 2);
+		        	echo round($a, 2).' $';
 		        ?>
 		        <?php
 		        	if (! Auth::check()) {

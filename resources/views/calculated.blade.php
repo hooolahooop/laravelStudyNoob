@@ -121,7 +121,7 @@
         	$Price = $_POST['S']*$_POST['price'];
         	echo $Price;*/
         ?>
-                    Стоимость жилья по адресу: 
+            Стоимость жилья по адресу: 
             <?php
                 $address = $_GET['adr'] ?? '';
                 echo $address;

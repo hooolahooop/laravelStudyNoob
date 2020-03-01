@@ -1,4 +1,11 @@
 <?php return array (
+  'barryvdh/laravel-cors' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Fruitcake\\Cors\\CorsServiceProvider',
+    ),
+  ),
   'facade/ignition' => 
   array (
     'providers' => 
@@ -27,6 +34,13 @@
     array (
       'DadataSuggest' => 'Fomvasss\\Dadata\\Facades\\DadataSuggest',
       'DadataClean' => 'Fomvasss\\Dadata\\Facades\\DadataClean',
+    ),
+  ),
+  'fruitcake/laravel-cors' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Fruitcake\\Cors\\CorsServiceProvider',
     ),
   ),
   'laravel/tinker' => 

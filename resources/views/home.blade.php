@@ -15,7 +15,12 @@
                     @endif
 
                     You are logged in!
+                <div>
+                    <a href="calculate">Рассчет стоимости жилья</a>
+                    <a href="/">Главная страница</a>
                 </div>
+                </div>
+
             </div>
         </div>
     </div>

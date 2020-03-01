@@ -31,6 +31,3 @@ Route::get('calculate', function () {
     return view('calculate');
 });
 
-/*Route::get('calculated', function () {
-    return view('calculated');
-});

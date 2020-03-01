@@ -13,7 +13,7 @@ class CalculateController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->user = JWTAuth::parseToken()->authenticate();
     }
 
     /**
@@ -26,3 +26,4 @@ class CalculateController extends Controller
         return view('calculate');
     }
 }
+
